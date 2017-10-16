@@ -1,0 +1,150 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400');
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+$primary-blue: #9EBBDC;
+$primary-blue-background: rgba(158, 188, 220, 0.65);
+
+html {
+
+}
+body {
+    background: white;
+    font-family: 'Muli', sans-serif;
+}
+
+.navbar-default {
+    margin-bottom: 0;
+    background: transparent;
+    border-color: transparent;
+    height: 100px;
+    .navbar-toggle {
+        border-color: transparent;
+        .icon-bar {
+            background: white;
+            width: 25px;
+        }
+        .middle {
+            background: orange;
+        }
+    }
+    .navbar-toggle:hover {
+        background: transparent;
+    }
+
+
+
+    .container {
+        padding-top: 30px;
+    }
+    .navbar-nav {
+        li {
+            a {
+                color: white;
+            }
+        }
+    }
+
+    .navbar-brand {
+        font-size: 28px;
+        color: #9EBBDC;
+        font-family: 'Muli', sans-serif;
+        font-weight: 200;
+        span {
+            color: white;
+            font-size: 34px;
+        }
+    }
+}
+
+#hero {
+    margin-top: -122px;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://s3.us-east-2.amazonaws.com/iamelimars/pexels-photo-323780.jpeg');
+    background-position: center center;
+    #cover {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(42, 42, 42, 0.7);
+        h1 {
+            top: 47vh;
+            color: white;
+            position: relative;
+            font-family: 'Muli', sans-serif;
+            font-weight: 200;
+            font-size: 3rem;
+        }
+        h3 {
+            top: 50vh;
+            color: white;
+            position: relative;
+            font-family: 'Muli', sans-serif;
+            font-weight: 200;
+            font-size: 2.1rem;
+        }
+        a {
+            // top: 85vh;
+            bottom: 10vh;
+            left: 48vw;
+            position: absolute;
+            color: white;
+        }
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .navbar-default {
+        .navbar-collapse {
+            border-color: transparent;
+            background-color: rgba(1, 1, 1, 0.65)
+        }
+    }
+
+    #hero {
+        #cover {
+            h1 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
+
+.section {
+    min-height: 50vh;
+    width: 100vw;
+}
+.alt-section {
+    min-height: 50vh;
+    width: 100vw;
+    background: $primary-blue-background;
+}
+
+#info {
+    padding-top: 60px;
+    .info-section {
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+
+#panel {
+    img {
+
+    }
+}
