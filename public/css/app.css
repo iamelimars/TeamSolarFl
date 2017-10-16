@@ -8522,6 +8522,7 @@ body {
 #contact #contact-form #submit {
   background-color: #4A4A4A;
   color: white;
+  text-align: center;
 }
 
 #team h3 {
@@ -8557,6 +8558,16 @@ body {
 
 #footer {
   background-color: #4A4A4A;
+}
+
+#footer .footer-section {
+  margin-top: 50px;
+}
+
+#footer .footer-section h4 {
+  font-weight: 200;
+  color: white;
+  font-size: 15px;
 }
 
 #bottom-footer {
