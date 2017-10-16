@@ -44,6 +44,19 @@
 
 <div id="contact" class="alt-section">
     <div class="container">
+      <h3>Contact</h3>
+      <form id="contact-form" class="col-xs-10 col-xs-offset-1" action="{!! route('post.contact') !!}" method="post">
+        <label class="col-xs-12" for="name">Name:</label>
+        <input class="col-xs-12" type="text" id="name" name="name" value="">
+
+        <label class="col-xs-12" for="email">Email:</label>
+        <input class="col-xs-12" type="email" name="email" id="email" value="">
+
+        <label class="col-xs-12" for="body">Body:</label>
+        <textarea class="col-xs-12" name="body" id="body" rows="8" cols="80"></textarea>
+
+        <input type="submit" value="Submit" id="submit" class="col-xs-4 col-xs-offset-4 ">
+      </form>
         {{--  {!! Form::open(['url' => '', 'method' => 'post']) !!}  --}}
         {{--  {!! Form::open(array('route' => 'post.contact', 'id' => 'contactForm')) !!}
             {{ csrf_field() }}

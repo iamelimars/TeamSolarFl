@@ -11,7 +11,7 @@
 
 $primary-blue: #9EBBDC;
 $primary-blue-background: rgba(158, 188, 220, 0.65);
-
+$primary-black: #4A4A4A;
 html {
 
 }
@@ -147,4 +147,34 @@ body {
     img {
 
     }
+}
+
+#contact {
+  h3 {
+    font-weight: 300;
+  }
+  #contact-form {
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    label {
+      font-weight: 300;
+      font-size: 15px;
+    }
+    input {
+      margin-bottom: 20px;
+      height: 35px;
+      border-color: transparent;
+      background-color: $primary-blue-background;
+    }
+    textarea {
+      margin-bottom: 20px;
+      border-color: transparent;
+      background-color: $primary-blue-background;
+    }
+    #submit {
+      background-color: $primary-black;
+      color: white;
+    }
+  }
 }
