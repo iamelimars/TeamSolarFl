@@ -131,7 +131,14 @@ body {
     width: 100vw;
     background: $primary-blue-background;
 }
-
+.top-footer {
+  min-height: 40vh;
+  width: 100vw;
+}
+.footer {
+  height: 30px;
+  width: 100vw;
+}
 #info {
     padding-top: 60px;
     .info-section {
@@ -151,7 +158,9 @@ body {
 
 #contact {
   h3 {
-    font-weight: 300;
+    font-weight: 200;
+    color: black;
+    margin-top: 100px;
   }
   #contact-form {
     margin-bottom: 50px;
@@ -160,6 +169,7 @@ body {
     label {
       font-weight: 300;
       font-size: 15px;
+      color: black;
     }
     input {
       margin-bottom: 20px;
@@ -177,4 +187,42 @@ body {
       color: white;
     }
   }
+}
+
+#team {
+  h3 {
+    margin-top: 100px;
+    color: black;
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+  .team-container {
+    margin-bottom: 100px;
+    .team-card {
+      min-height: 350px;
+      background-color: white;
+      margin-bottom: 50px;
+      -webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.26);
+      -moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.26);
+      box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.26);
+
+      img {
+        margin-top: 30px;
+      }
+      h4 {
+        margin-top: 40px;
+      }
+      h5 {
+        color: #9B9B9B;
+      }
+    }
+  }
+
+}
+
+#footer {
+  background-color: $primary-black;
+}
+#bottom-footer {
+  background-color: #1C1C1C;
 }
